@@ -1,7 +1,7 @@
 # Software version pinning
 FROM alpine:3.15.6
 ARG PAYLOAD_VER=0.31.1
-ARG RUBY_VER=3.0.4-r0
+ARG RUBY_VER=3.0.5-r0
 ARG RUBYGEM_VER=3.0.0
 
 # Version info.

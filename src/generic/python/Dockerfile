@@ -1,6 +1,6 @@
 # Software version pinning
 FROM alpine:3.17
-ARG PAYLOAD_VER=3.10.9-r1
+ARG PAYLOAD_VER=3.10.10-r0
 
 # Version info.
 ARG DOCKER_IMG_VER=0.1.0
