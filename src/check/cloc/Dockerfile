@@ -19,6 +19,7 @@ ENV DOCKER_IMG_VER $DOCKER_IMG_VER
 
 # Install base/support software
 RUN apk add --no-cache \
+        bash \
         make \
         python3
 

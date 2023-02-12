@@ -21,6 +21,7 @@ ENV DOCKER_IMG_VER $DOCKER_IMG_VER
 RUN apk add --no-cache \
         avr-libc \
         avrdude \
+        bash \
         binutils-avr \
         make \
         qemu-system-avr

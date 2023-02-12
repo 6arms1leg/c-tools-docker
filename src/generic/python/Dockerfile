@@ -22,6 +22,7 @@ RUN apk add --no-cache make
 
 # Install main ("payload") software
 RUN apk add --no-cache \
+        bash \
         py3-numpy \
         py3-pandas \
         py3-pip \
