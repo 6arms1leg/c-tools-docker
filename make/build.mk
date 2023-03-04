@@ -1,7 +1,10 @@
 # Sub-Makefile (included by main Makefile)
 
-# Docker image builder
+# Docker executable
 DOCKER := docker
+
+# Docker image builder
+DOCKER_BUILDER := $(DOCKER) buildx
 
 # Main target base name
 BIN := c-tools
@@ -120,7 +123,7 @@ $(BIN):
 $(BUILD_PATH)/$(BIN):
 	@mkdir -p $(dir $@)
 	@echo "$(PROMPT)  Build Docker image \`$(DOCKER_IMG_NAME_VAR_PT)\`"
-	@sudo $(DOCKER) build \
+	@sudo $(DOCKER_BUILDER) build \
 	    -t $(DOCKER_IMG_NAME_VAR_PT):$(DOCKER_IMG_VER) \
 	    -t $(DOCKER_IMG_NAME_VAR_PT):latest \
 	    $(SRC_PATH_VAR_PT)/ \
